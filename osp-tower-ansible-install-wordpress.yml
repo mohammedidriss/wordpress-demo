@@ -1,0 +1,8 @@
+---
+- name:  Install WordPress, MariaDB
+  hosts: all
+  become: true
+
+  roles:
+    - mariadb
+    - wordpress
